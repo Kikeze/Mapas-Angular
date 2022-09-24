@@ -82,6 +82,15 @@ export class MarcadoresComponent implements OnInit, AfterViewInit, OnDestroy {
         this.guardar();
     }
 
+    borrar(index: number) {
+        const marker = this.markers[index].marker;
+        marker.off("dragend", () => {});
+        marker.remove();
+
+        this.markers.splice(index, 1);
+        this.guardar();
+    }
+
     guardar() {
         if( this.markers.length <= 0 ) {
             return;
