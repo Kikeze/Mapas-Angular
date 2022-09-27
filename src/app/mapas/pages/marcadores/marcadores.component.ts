@@ -14,7 +14,7 @@ export class MarcadoresComponent implements OnInit, AfterViewInit, OnDestroy {
 
     mapa!: mapboxgl.Map;
     zoomLevel: number = 15;
-    center: {lng: number, lat: number} = {lng: -99.05241450416831, lat: 19.449652425341};
+    center: {lng: number, lat: number} = {lng: -99.13320026111822, lat: 19.432646073942443};
 
     markers: MarkerItem[] = [];
 

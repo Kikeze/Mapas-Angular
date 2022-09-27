@@ -14,7 +14,7 @@ export class FullScreenComponent implements OnInit, AfterViewInit {
 
     mapa!: mapboxgl.Map;
     zoomLevel: number = 10;
-    center: {lng: number, lat: number} = {lng: -99.05241450416831, lat: 19.449652425341};
+    center: {lng: number, lat: number} = {lng: -99.13320026111822, lat: 19.432646073942443};
 
     constructor() {
         // Do nothing
